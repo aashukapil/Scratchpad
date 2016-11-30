@@ -23,7 +23,7 @@ public class MathApplicationTest {
     @Rule
     public MockitoRule rule = MockitoJUnit.rule();
     @InjectMocks
-    private MathApplication mathApplication = new MathApplication();
+    private MathApplication mathApplication;
     @Mock
     private CalculatorService calcService;
 

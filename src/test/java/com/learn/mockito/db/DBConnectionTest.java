@@ -1,6 +1,7 @@
 package com.learn.mockito.db;
 
 //import com.learn.mockito.db.DBConnection;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
@@ -8,7 +9,6 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
@@ -29,7 +29,8 @@ public class DBConnectionTest {
     private DBConnection dbConnection;
     @Mock
     private Connection mockConnection;
-    @Mock private Statement mockStatement;
+    @Mock
+    private Statement mockStatement;
 
     @Before
     public void setUp() {
